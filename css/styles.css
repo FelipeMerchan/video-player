@@ -10,6 +10,42 @@ body {
   margin: auto;
 }
 
+.player {
+  position: relative;
+}
+
+.player-title {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline-start: 1.25rem;
+  color: #EDF5FC;
+  font-size: 1.0625rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+}
+
+.player-actions {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .player video {
   inline-size: 100%;
+  aspect-ratio: 16/9;
+  vertical-align: middle;
+}
+
+.player-progress {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  display: flex;
+  padding: .625rem;
+}
+
+.player-progress input {
+  flex: 1;
 }
