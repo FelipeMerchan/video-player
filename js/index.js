@@ -26,7 +26,6 @@ function handleForward() {
 }
 
 function handleLoaded() {
-  console.log($video.duration)
   $progress.max = $video.duration
 }
 
